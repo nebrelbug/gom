@@ -1,14 +1,14 @@
 import click
 import pynvml
 import time
-import sys
-from utils import show_table
 
-pynvml.nvmlInit()
+from gom.utils import show_table
 
 @click.group()
-@click.version_option("0.2.0", prog_name="gom")
+@click.version_option("0.3.0", prog_name="gom")
 def main():
+    pynvml.nvmlInit()
+
     pass
 
 @click.command(help="Show GPU usage")
@@ -28,4 +28,4 @@ main.add_command(watch)
 if __name__ == "__main__":
     main()
 
-pynvml.nvmlShutdown()
+    pynvml.nvmlShutdown()

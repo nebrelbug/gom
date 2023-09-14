@@ -1,4 +1,5 @@
 import datetime
+
 import pynvml
 from tabulate import tabulate
 import click
