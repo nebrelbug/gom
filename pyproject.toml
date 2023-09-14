@@ -1,9 +1,12 @@
 [tool.poetry]
-name = "gob-lib"
-version = "0.1.0"
+name = "gom"
+version = "0.2.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Ben Gubler <nebrelbug@gmail.com>"]
 readme = "README.md"
+
+[tool.poetry.scripts]
+gom = 'gom.main:run'
 
 [tool.poetry.dependencies]
 python = "^3.8"
