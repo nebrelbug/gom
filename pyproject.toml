@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gom"
-version = "0.3.0"
+version = "0.3.1"
 description = "Live GPU utilization monitor, inspired by nvidia-smi. Shows per-container GPU usage as well as total GPU usage."
 authors = ["Ben Gubler <nebrelbug@gmail.com>"]
 readme = "README.md"
